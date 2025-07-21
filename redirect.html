@@ -3,10 +3,22 @@
   <head>
     <title>Redirecting...</title>
     <script>
-      window.open("https://kmartaus.sharepoint.com/sites/M365LP/", "_blank");
+      try {
+        window.location.href = "https://kmartaus.sharepoint.com/sites/M365LP/";
+      } catch (e) {
+        console.error("Redirect failed:", e);
+      }
     </script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+        color: #333;
+      }
+    </style>
   </head>
   <body>
-    <p>Please Go to Ikurate SharePoint Webpage</p>
+    <h2>Redirecting to Ikurate SharePoint Site...</h2>
+    <p>If you're not redirected automatically, please <a href="https://kmartaus.sharepoint.com/sites/M365LP/" target="_blank">click here</a>.</p>
   </body>
 </html>
